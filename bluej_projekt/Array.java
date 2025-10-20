@@ -22,15 +22,28 @@ public class Array {
     public static int arrayMax(int[] arr) {
         int rv = 0;
         for(int i = 0; i < arr.length-1; i++) {
-        
+            rv = arr[i];
+            for(int j = 0; j < arr.length-1; j++) {
+                if(rv < arr[j]) {
+                rv = arr[j];
+                }
+            }
         }
+        return rv;
     }
 
     // hier wird das kleinste Element des Arrays gesucht
     public static int arrayMin(int[] arr) {
-        int rv = Integer.MIN_VALUE;
+    int rv = 0;
+        for(int i = 0; i > arr.length-1; i++) {
+            rv = arr[i];
+            for(int j = 0; j < arr.length-1; j++) {
+                if(rv < arr[j]) {
+                rv = arr[j];
+                }
+            }
+        }
         return rv;
-
     }
 
     // gib ein neues Array zurück, aber in der umgedrehten Reihenfolge!
