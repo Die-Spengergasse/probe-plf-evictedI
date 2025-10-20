@@ -25,7 +25,7 @@ public class Array {
             rv = arr[i];
             for(int j = 0; j < arr.length-1; j++) {
                 if(rv < arr[j]) {
-                rv = arr[j];
+                    rv = arr[j];
                 }
             }
         }
@@ -34,12 +34,12 @@ public class Array {
 
     // hier wird das kleinste Element des Arrays gesucht
     public static int arrayMin(int[] arr) {
-    int rv = 0;
+        int rv = 0;
         for(int i = 0; i < arr.length-1; i++) {
             rv = arr[i];
             for(int j = 0; j < arr.length-1; j++) {
                 if(rv > arr[j]) {
-                rv = arr[j];
+                    rv = arr[j];
                 }
             }
         }
@@ -48,9 +48,11 @@ public class Array {
 
     // gib ein neues Array zurück, aber in der umgedrehten Reihenfolge!
     public static int[] toReversed(int[] arg) {
-        for(int i = arg.length - 1;i >= 0; i--) {
-            
+        for(int i = 0; i < arg.length; i++) {
+            int temp = arg[i];
+            arg[i] = arg[arg.length - i - 1];
+            arg[arg.length - i - 1] = temp;
         }
-        return 
+        return arg;
     }
 }
