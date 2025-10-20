@@ -20,14 +20,10 @@ public class Array {
 
     // hier wird das größte Element des Arrays gesucht
     public static int arrayMax(int[] arr) {
-        int[] numbers = {3 , 6 ,8 ,10};
-        int rv = numbers[0];
-        for(int i = 1;i < numbers.length;i++) {
-            if(numbers[i] > rv) {
-                rv = numbers[i];
-            }
+        int rv = 0;
+        for(int i = 0; i < arr.length-1; i++) {
+        
         }
-        return rv;
     }
 
     // hier wird das kleinste Element des Arrays gesucht
