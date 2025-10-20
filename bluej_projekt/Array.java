@@ -20,7 +20,11 @@ public class Array {
 
     // hier wird das größte Element des Arrays gesucht
     public static int arrayMax(int[] arr) {
-        int rv = arr.MAX_VALUE;
+                int i = 0;
+        for(i > arr){
+            i++;
+        }
+        int rv = Integer.MAX_VALUE;
         return rv;
     }
 
