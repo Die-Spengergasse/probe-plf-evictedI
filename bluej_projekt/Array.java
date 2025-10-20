@@ -13,14 +13,14 @@ public class Array {
         int rv = 0;
         for(int i = 0; i < arr.length; i++)
         {
-            rv = arr[i];
+            rv += arr[i];
         }
         return rv;
     }
 
     // hier wird das größte Element des Arrays gesucht
     public static int arrayMax(int[] arr) {
-        int rv = Integer.MAX_VALUE;
+        int rv = arr.MAX_VALUE;
         return rv;
     }
 
@@ -28,6 +28,7 @@ public class Array {
     public static int arrayMin(int[] arr) {
         int rv = Integer.MIN_VALUE;
         return rv;
+        
     }
 
     // gib ein neues Array zurück, aber in der umgedrehten Reihenfolge!
