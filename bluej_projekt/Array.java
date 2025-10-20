@@ -20,19 +20,16 @@ public class Array {
 
     // hier wird das größte Element des Arrays gesucht
     public static int arrayMax(int[] arr) {
-                int i = 0;
-        for(i > arr){
-            i++;
-        }
-        int rv = Integer.MAX_VALUE;
-        return rv;
+        int[] numbers = {3 , 6 ,8 ,10};
+        int max = numbers[0];
+        for()
     }
 
     // hier wird das kleinste Element des Arrays gesucht
     public static int arrayMin(int[] arr) {
         int rv = Integer.MIN_VALUE;
         return rv;
-        
+
     }
 
     // gib ein neues Array zurück, aber in der umgedrehten Reihenfolge!
